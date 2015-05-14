@@ -10,18 +10,18 @@
 			background: #c0c0c0;
 		}
 		
-		h1
+		div.content
+		{
+			max-width: 600px;
+			margin: auto;
+		}
+		
+		div.content h1
 		{
 			text-align: center;
 			font-family: 'Goudy Old Style' 'Times New Roman' serif;
 			font-size: 4em;
 			margin: 0;
-		}
-		
-		div.content
-		{
-			max-width: 600px;
-			margin: auto;
 		}
 		
 		div.content h2
@@ -38,15 +38,23 @@
 		
 		div.images img
 		{
-			margin: 10px;
+			margin-bottom: 10px;
 			width: 101px;
+		}
+
+		@media (max-width: 860px)
+		{
+			div.content
+			{
+				margin: 0 0 0 122px;
+			}
 		}
 	</style>
 </head>
     <body>
-		<h1>V&amp;A Heating Ltd</h1>
+        <div class="content">
+			<h1>V&amp;A Heating Ltd</h1>
 
-        <div class="content centered">
             <h2>Origin Of The Company</h2>
 
             <p>
